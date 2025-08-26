@@ -1,5 +1,20 @@
 # 🌍 Space Missions Dashboard
 
+## 📌 Project Resources
+
+### 🔗 Jira Dashboard  
+[![Jira](https://img.shields.io/badge/Jira-Dashboard-0052CC?style=for-the-badge&logo=jira&logoColor=white)](https://jcdlega-1755213341901.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiZDRjZTVlZmQ1MDBkNDU3YmE3YTBmYjIzMTE4YmMxZDYiLCJwIjoiaiJ9)
+
+Track the project workflow, tasks, and progress through the Jira Dashboard.
+
+---
+
+### 🎨 Figma Mockups & Inception  
+[![Figma](https://img.shields.io/badge/Figma-Mockups-FF7262?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/YMtw0vzrc0hYJftkCh6qmr/Space-Missions-Dashboard?node-id=16-53&t=aMuhSFetSHMg3LNa-1)
+
+View the wireframes, mockups, and inception documents that guided the design process.
+
+
 ## Conventional Commits
 
 | Type        | Description |
