@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend part of the Spacial Missions Dashboard",
+  "keywords": [
+    "Dashboard"
+  ],
+  "homepage": "https://github.com/Jcdelega/1-web-d-proyecto-final#readme",
+  "bugs": {
+    "url": "https://github.com/Jcdelega/1-web-d-proyecto-final/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jcdelega/1-web-d-proyecto-final.git"
+  },
+  "license": "ISC",
+  "author": "Jcdelega",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  }
+}

@@ -1,3 +1,14 @@
+# You can write a comment with the # sign
+# Folders and files you want to ignore are written in a new line
+
+# Do not permit folders and files from MAC Os
+.DS_Store
+
+# Exclude the following video formats
+.avi 
+.mkv
+.mp4
+
 # Logs
 logs
 *.log
@@ -7,12 +18,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Exclude node_modules folder, subfolders and files No permitir 
 node_modules
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Exclude editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +34,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Exclude enviroment variables
+.env

@@ -1,4 +1,4 @@
-# 🌍 Space Missions Dashboard
+# 🌍 Space Missions Dashboard FrontEnd
 
 ## 📌 Project Resources
 
