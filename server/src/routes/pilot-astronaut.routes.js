@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { PilotAstronaut } from '../models/pilot-astronaut.model.js';
+import  PilotAstronaut  from '../models/pilot-astronaut.model.js';
 
 const ROUTER = Router();
  
@@ -20,8 +20,8 @@ ROUTER.put('/:id', async(req,res)=>{
 })
 
 ROUTER.delete('/:id', async(req,res)=>{
-    const deletedPilotAstronaut = PilotAstronaut.findByIdAndDelete(req.params.id);
-    res.json(deletedPilotAstronaut);
+    const deletedPilotAstronaut = await PilotAstronaut.findByIdAndDelete(req.params.id);
+    res.json(`Log with ID: ${req.params.id}, Pilot Call Sign: ${deletedPilotAstronaut.PilotCallSign}\n deleted successfully`);
 })
 
 export default ROUTER;
