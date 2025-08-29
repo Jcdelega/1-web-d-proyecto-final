@@ -6,7 +6,7 @@ const PilotAstronautScheme = new mongoose.Schema({
         required: true,
         trim: true,
     },
-    DigitalComunication:{
+    DigitalCommunication:{
         type: String,
         required: true,
         trim: true,
