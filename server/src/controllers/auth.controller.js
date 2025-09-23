@@ -96,17 +96,17 @@ export const logout = (req, res) => {
   return res.sendStatus(200)
 }
 
-/* export const profile = async (req, res) => {
+export const session = async (req, res) => {
 
-  const userFound = await User.findById(req.user.id)
+  const pilotAstonautFound = await pilotAstronautModel.findById(req.pilotAstronaut.id)
 
-  if (!userFound) return res.status(400).json({ message: "Usuario no encontrado" })
+  if (!pilotAstonautFound) return res.status(400).json({ message: 'Pilot or Astronaut not found' })
 
   return res.json({
-    id: userFound._id,
-    PilotCallSign: userFound.PilotCallSign,
-    DigitalCommunication: userFound.DigitalCommunication,
-    createdAt: userFound.createdAt,
-    updatedAt: userFound.updatedAt,
+    id: pilotAstonautFound._id,
+    PilotCallSign: pilotAstonautFound.PilotCallSign,
+    DigitalCommunication: pilotAstonautFound.DigitalCommunication,
+    createdAt: pilotAstonautFound.createdAt,
+    updatedAt: pilotAstonautFound.updatedAt,
   })
-} */
+}
