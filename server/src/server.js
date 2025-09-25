@@ -15,7 +15,7 @@ app.use(
     cors({
         origin: [
             "http://localhost:5173",
-            "https://1-web-d-proyecto-final-ten.vercel.app",
+            "https://1-web-d-proyecto-final-client.vercel.app/",
         ],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
