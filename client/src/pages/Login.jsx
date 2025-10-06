@@ -38,63 +38,67 @@ export const Login = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background p-4">
+    <div className="flex min-h-screen items-center justify-center font-quantico">
       <div
         className="
-          w-[320px] sm:w-[400px] md:w-[500px] 
-          rounded-4xl border border-border bg-panel p-6 text-center
-          shadow-lg shadow-border sm:min-h-[568px] md:min-h-[700px]
+          rounded-4xl border-2 border-border/50 bg-panel p-3 text-center
+          shadow-lg shadow-border/25 w-[320px]
         "
       >
-        <h1 className="mb-4 text-2xl font-bold text-title">
+        <h1 className="mb-4 text-lg font-bold text-title">
           COOPER CORP RANGER ZTK~
         </h1>
-        <p className="mb-6 text-lg text-text-buttons">LOAD YOUR PILOT PROFILE</p>
-        <form onSubmit={handleSubmit(onSubmit)} className="pace-y-4 text-left border border-border shadow-md shadow-border p-2">
-          <div>
-            <label className="block text-sm font-medium text-general-text">
-              Digital Communication (Email)
-            </label>
-            <input
-              type="email"
-              {...register("DigitalCommunication")}
-              className="w-full px-3 py-2 mt-1 rounded-md bg-inputBg text-dynamic-text focus:outline-none focus:ring-2 focus:ring-primaryColor"
-            />
-            {errors.DigitalCommunication && (
-              <p className="text-xs text-red-400 m-1">
-                {errors.DigitalCommunication.message}
-              </p>
-            )}
+        <p className="mb-6 text-md text-text-buttons">LOAD YOUR PILOT PROFILE</p>
+        <form onSubmit={handleSubmit(onSubmit)} className=''>
+          <div className='space-y-2 text-general-text text-left border-2 border-border/50 shadow-md shadow-text-buttons/25 p-2'>
+            <div className='md:flex'>
+              <label className="block text-sm font-medium ">
+                Digital Communication:
+              </label>
+              <input
+                type="email"
+                {...register("DigitalCommunication")}
+                className="w-full px-3 py-2 mt-1 font-share-tech-mono rounded-md bg-inputBg text-dynamic-text focus:outline-none focus:ring-2 focus:ring-primaryColor"
+              />
+              {errors.DigitalCommunication && (
+                <p className="text-xs text-red-400 m-1">
+                  {errors.DigitalCommunication.message}
+                </p>
+              )}
+            </div>
+            <div className='md:flex'>
+              <label className="block text-sm font-medium">
+                Password:
+              </label>
+              <input
+                type="password"
+                {...register("Password")}
+                className="w-full px-3 py-2 mt-1 font-share-tech-mono rounded-md bg-inputBg text-dynamic-text focus:outline-none focus:ring-2 focus:ring-primaryColor"
+              />
+              {errors.Password && (
+                <p className="text-xs text-red-400 m-1">
+                  {errors.Password.message}
+                </p>
+              )}
+            </div>
           </div>
+          <p className=" mt-5 font-bold text-general-text">GO TO MAIN PANEL</p>
 
-          <div>
-            <label className="block text-sm font-medium text-general-text">
-              Password
-            </label>
-            <input
-              type="password"
-              {...register("Password")}
-              className="w-full px-3 py-2 mt-1 rounded-md bg-inputBg text-dynamic-text focus:outline-none focus:ring-2 focus:ring-primaryColor"
-            />
-            {errors.Password && (
-              <p className="text-xs text-red-400 m-1">
-                {errors.Password.message}
-              </p>
-            )}
-          </div>
           <button
             type="submit"
             disabled={isSubmitting}
             className="
-              mt-6 w-full rounded bg-primary py-3 font-semibold text-general-text
+              mt-6  rounded bg-primary py-3 font-semibold text-general-text
               hover:bg-button-1 focus:outline-none focus:ring-2 focus:ring-skyblue
             "
           >
-            <p className="mb-6 text-lg text-warning">GO TO MAIN PANEL</p>
+            <figure className="flex justify-center">
+              <img className="h-10 w-10" src="/auth-fingerprint-svgrepo-com.svg" alt="Fingerprint" />
+            </figure>
             {isSubmitting ? "Loading main panel..." : ""}
           </button>
         </form>
-        <p className="mt-3 text-general-text"><Link to="/register">REGISTER</Link></p>
+        <p className="mt-3 text-general-text text-start pl-2"><Link to="/register">GO TO REGISTER</Link></p>
       </div>
     </div>
 
