@@ -12,6 +12,9 @@
   --color-white-text: #FEFEFF;
   --color-button-1: #251840;
   --color-button-2: #E4B8F8;
+  --color-stroke: #1E2D40;
+  --font-share-tech-mono: "Share Tech Mono", monospace;
+  --font-quantico: "Quantico", sans-serif;
 }
 :root {
   --color-general-text: #0B8381;
@@ -25,6 +28,7 @@
   --color-white-text: #FEFEFF;
   --color-button-1: #251840;
   --color-button-2: #E4B8F8;
+  --color-stroke: #1E2D40;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
