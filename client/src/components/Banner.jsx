@@ -2,8 +2,8 @@ import {Link} from 'react-router-dom';
 export default function Banner({ pilot, ranger, idCode }) {
   return (
     <header className="w-full text-center border-b-2 border-dashed border-skyblue/50 pb-2">
-      <div className="flex justify-center">
-        <figure className='flex align-middle'>
+      <div className="flex justify-start">
+        <figure className='flex align-middle mr-5'>
           <Link to="/register">
             <img className="m-2 justify-self-start" src="/fingerprint-skyblue.svg" alt="bordered blue fingerprint image" />
           </Link>

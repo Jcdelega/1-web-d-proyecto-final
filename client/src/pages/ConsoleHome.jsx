@@ -31,9 +31,9 @@ export const ConsoleHome =()=> {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col items-center p-4 gap-4">
+    <div className="min-h-screen bg-background flex flex-col items-center p-4 gap-4">
       <Banner pilot="Tars" ranger="ZTK" idCode="2031568513" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-5xl">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-1 w-full max-w-5xl">
         <NavControls onStart={startSequence} />
         <PlanetEventLog events={events} onNewEvent={setEvents} />
         <CoreNavGraph distance={distance} fuel={fuel} />
